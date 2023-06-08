@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DigiLokal</string>
+    <string name="title_signup_page">Selangkah lagi...</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_email">Daftar dengan Email</string>
+    <string name="title_login_page">Selamat datang kembali!</string>
+    <string name="message_login_page">Senang bertemu denganmu lagi! Kembalilah dan lanjutkan perjalanan Anda bersama kami</string>
+    <string name="email_title">Email</string>
+    <string name="signup_text">Don\'t have an account yet? Click here to register</string>
+    <string name="login">Masuk</string>
+    <string name="join_now">Gabung Sekarang</string>
+    <string name="login_now">Sudah punya akun? Log-in</string>
+    <string name="register_description">Buat akun untuk menyimpan dan mendapatkan daftar program yang direkomendasikan</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="password_hint">Kata Sandi (8+ Characters)</string>
+    <string name="tos_pp">Dengan mendaftar, Anda setuju dengan Privacy Policy dan Terms of Service</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_projects">Projects</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_profile">Profile</string>
+    <string name="top_influencer_category">Influencer Pilihan</string>
+    <string name="services_category_title">Digital Marketing</string>
+    <string name="show_more">Lihat Semua</string>
+</resources>
