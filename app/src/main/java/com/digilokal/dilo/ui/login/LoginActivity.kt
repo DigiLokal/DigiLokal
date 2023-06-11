@@ -93,18 +93,18 @@ class LoginActivity : AppCompatActivity(), PasswordEditText.PasswordValidationLi
 
     private fun setupAction() {
         binding.loginButton.setOnClickListener {
-            val email = binding.edLoginEmail.text.toString()
+            val username = binding.edLoginUsername.text.toString()
             val password = binding.edLoginPassword.text.toString()
             when {
-                email.isEmpty() -> {
-                    binding.emailEditTextLayout.error = "Enter your email"
+                username.isEmpty() -> {
+                    binding.usernameEditTextLayout.error = "Enter your email"
                 }
                 password.isEmpty() -> {
                     binding.passwordEditTextLayout.error = "Enter your password"
                 }
                 else -> {
                     loginViewModel.disableButton()
-                    loginViewModel.loginUser(email, password)
+                    loginViewModel.loginUser(username, password)
                 }
             }
         }

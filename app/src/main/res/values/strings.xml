@@ -13,7 +13,7 @@
     <string name="join_now">Gabung Sekarang</string>
     <string name="login_now">Sudah punya akun? Log-in</string>
     <string name="register_description">Buat akun untuk menyimpan dan mendapatkan daftar program yang direkomendasikan</string>
-    <string name="full_name">Nama Lengkap</string>
+    <string name="username">Nama Pengguna</string>
     <string name="email_address">Alamat Email</string>
     <string name="password_hint">Kata Sandi (8+ Characters)</string>
     <string name="tos_pp">Dengan mendaftar, Anda setuju dengan Privacy Policy dan Terms of Service</string>
@@ -27,4 +27,6 @@
     <string name="top_influencer_category">Influencer Pilihan</string>
     <string name="services_category_title">Digital Marketing</string>
     <string name="show_more">Lihat Semua</string>
+    <string name="add">\u0040</string>
+    <string name="top_services_category">Jasa Pilihan</string>
 </resources>

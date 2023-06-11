@@ -5,12 +5,13 @@ import android.widget.Toast
 import androidx.lifecycle.*
 import com.digilokal.dilo.data.UserPreference
 import com.digilokal.dilo.data.model.UserModel
-import com.digilokal.dilo.remote.response.LoginResponse
+import com.digilokal.dilo.remote.response.Login2Response
 import com.digilokal.dilo.remote.retrofit.ApiConfig
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class LoginViewModel(private val pref: UserPreference, private val context: Context) : ViewModel() {
 
@@ -48,43 +49,46 @@ class LoginViewModel(private val pref: UserPreference, private val context: Cont
     }
 
 
-    fun loginUser(email: String, password : String) {
+    fun loginUser(username: String, password : String) {
         _isloading.value = true
         val requestBody = HashMap<String, String>()
-        requestBody["username"] = email
+        requestBody["username"] = username
         requestBody["password"] = password
         val client = ApiConfig.getApiService().loginUser(requestBody)
-        client.enqueue(object : Callback<LoginResponse> {
+        client.enqueue(object : Callback<Login2Response> {
             override fun onResponse(
-                call: Call<LoginResponse>,
-                response: Response<LoginResponse>
+                call: Call<Login2Response>,
+                response: Response<Login2Response>
             ) {
                 enableButton()
                 _isloading.value = false
                 if (response.isSuccessful) {
                     val loginResponse = response.body()
-                    val messageResponse = response.message()
                     if (loginResponse != null) {
                         _loginSuccess.value = true
-                        showToast("Login successful")
+//                        showToast("Login successful")
+
                         showToast(loginResponse.message)
 
-//                        val user = UserModel(loginResponse.name, email, password, loginResponse.loginResult.token, true)
-//                        saveUser(user)
+                        val user = loginResponse.token?.let {
+                            UserModel(username, password,
+                                it, true)
+                        }
+                        if (user != null) {
+                            saveUser(user)
+                        }
 
                     } else {
-//                        showToast("Unknown error occurred")
+                        showToast("Unknown error occurred")
 //                        showToast(loginResponse.message)
                     }
                 } else {
                     showToast("Login failed. Please try again.")
-                    val messageResponse = response.message()
-                    showToast(messageResponse)
 
                 }
             }
 
-            override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+            override fun onFailure(call: Call<Login2Response>, t: Throwable) {
                 enableButton()
                 _isloading.value = false
                 showToast("Login failed. Please try again.")

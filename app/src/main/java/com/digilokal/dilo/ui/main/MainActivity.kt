@@ -19,6 +19,8 @@ import com.digilokal.dilo.data.UserPreference
 import com.digilokal.dilo.databinding.ActivityMainBinding
 import com.digilokal.dilo.helper.ViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.navigation.fragment.NavHostFragment
+
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -62,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         }
         supportActionBar?.hide()
     }
+
 
     private fun setupViewModel() {
         mainViewModel = ViewModelProvider(

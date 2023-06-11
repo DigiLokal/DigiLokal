@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.digilokal.dilo.data.UserPreference
+import com.digilokal.dilo.remote.response.Login2Response
 import com.digilokal.dilo.remote.response.RegisterResponse
 import com.digilokal.dilo.remote.retrofit.ApiConfig
 import retrofit2.Call
@@ -46,22 +47,25 @@ class SignupViewModel(private val pref: UserPreference, private val context: Con
         requestBody["password_check"] = password
 
         val client = ApiConfig.getApiService().registerUser(requestBody)
-        client.enqueue(object : Callback<RegisterResponse> {
+        client.enqueue(object : Callback<Login2Response> {
             override fun onResponse(
-                call: Call<RegisterResponse>,
-                response: Response<RegisterResponse>
+                call: Call<Login2Response>,
+                response: Response<Login2Response>
             ) {
 
                 _isloading.value = false
                 enableButton()
                 if (response.isSuccessful) {
                     val storyResponse = response.body()
-                    val messageResponse = response.message()
+
                     if (storyResponse != null) {
                         _registrationSuccess.value = true
-                        showToast("Registration successful")
+//                        showToast("Registration successful")
+                        showToast(storyResponse.message)
+
 //                        showToast(messageResponse)
                     } else {
+//                        showToast("Unknown error occurred")
                         showToast("Unknown error occurred")
 //                        showToast(messageResponse)
                     }
@@ -73,9 +77,10 @@ class SignupViewModel(private val pref: UserPreference, private val context: Con
                 }
             }
 
-            override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
+            override fun onFailure(call: Call<Login2Response>, t: Throwable) {
                 _isloading.value = false
                 enableButton()
+
             }
         })
     }

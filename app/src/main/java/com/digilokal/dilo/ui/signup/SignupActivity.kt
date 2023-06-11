@@ -84,12 +84,12 @@ class SignupActivity : AppCompatActivity(), PasswordEditText.PasswordValidationL
 
     private fun setupAction() {
         binding.signupButton.setOnClickListener {
-            val name = binding.edRegisterName.text.toString()
+            val name = binding.edRegisterUsername.text.toString()
             val email = binding.edRegisterEmail.text.toString()
             val password = binding.edRegisterPassword.text.toString()
             when {
                 name.isEmpty() -> {
-                    binding.nameEditTextLayout.error = "Enter your name"
+                    binding.usernameEditTextLayout.error = "Enter your username"
                 }
                 email.isEmpty() -> {
                     binding.emailEditTextLayout.error = "Enter your email"

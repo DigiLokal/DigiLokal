@@ -4,11 +4,11 @@ import com.google.gson.annotations.SerializedName
 
 data class AllServicesResponse(
 
-	@field:SerializedName("message")
-	val message: List<MessageItem>
+	@field:SerializedName("services")
+	val services: List<ServicesItem>
 )
 
-data class MessageItem(
+data class ServicesItem(
 
 	@field:SerializedName("influencer_id")
 	val influencerId: String,
