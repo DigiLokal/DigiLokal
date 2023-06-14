@@ -1,4 +1,5 @@
-# DigiLokal (ON PROGRESS)
+# ![Alt text](https://github.com/DigiLokal/.github/blob/main/profile/digilokal_new_bg.png "Title")
+# DigiLokal
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -30,25 +31,24 @@ or
 Current version
 
 #### What's currently done?
-- [x] 70% of Home
-
-That includes influencers and services cards.
-
+- [x] 95% of Home
 - [x] Login/Register
-
-Just need some animation🌟 to make it look cool (and more assets)
+- [x] Order feature (cart)
+- [x] Liked influencer
+- [x] Read and Update Profile
+      
 
 #### High-Priority
 Hopefully in 11/06 (23.59) all of this is done vvv
-- [ ] Detailed Influencers/Services
-- [ ] Profile (RU)
-- [ ] All Influencers and Services
-- [ ] Like Influencer feature
+- [x] Detailed Influencers/Services
+- [x] Profile (RU)
+- [x] All Influencers and Services
+- [x] Like Influencer feature
 
 #### Low-priority
+- [x] Loading on every page
 - [ ] Search
-- [ ] Loading on every page
-- [ ] Repository to store API data (actually i can make this while building the apps but i just forgot lmao)
+- [ ] Repository to store data
 - [ ] Motion and Activity transition
 - [ ] More Assets!
 
@@ -66,8 +66,6 @@ Future plan/release
 <!-- CONTACT -->
 ## Contact
 
-Only me lmao.
-
 | Member |  |
 |--|--|
 | Mahesa Danuarta |[Github](https://github.com/pitoregia)  |
@@ -77,4 +75,4 @@ Only me lmao.
 
 Thanks to
 
-- DigiLokal CC and ML.
+- DigiLokal CC and ML Team.
