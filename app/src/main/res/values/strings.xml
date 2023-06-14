@@ -8,7 +8,7 @@
     <string name="title_login_page">Selamat datang kembali!</string>
     <string name="message_login_page">Senang bertemu denganmu lagi! Kembalilah dan lanjutkan perjalanan Anda bersama kami</string>
     <string name="email_title">Email</string>
-    <string name="signup_text">Don\'t have an account yet? Click here to register</string>
+    <string name="signup_text">Belum punya akun? Sign-up</string>
     <string name="login">Masuk</string>
     <string name="join_now">Gabung Sekarang</string>
     <string name="login_now">Sudah punya akun? Log-in</string>
@@ -17,7 +17,6 @@
     <string name="email_address">Alamat Email</string>
     <string name="password_hint">Kata Sandi (8+ Characters)</string>
     <string name="tos_pp">Dengan mendaftar, Anda setuju dengan Privacy Policy dan Terms of Service</string>
-    <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -29,4 +28,15 @@
     <string name="show_more">Lihat Semua</string>
     <string name="add">\u0040</string>
     <string name="top_services_category">Jasa Pilihan</string>
+    <string name="search_influencer_title">Cari Influencer</string>
+    <string name="search_influencer_description"><![CDATA[Dapatkan jasa promosi produk atau bisnis Anda dengan nano & micro influencer]]></string>
+    <string name="rate_card">Rate Card</string>
+    <string name="edit_profile">Ubah Profile</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="edit_detail">Detail Pengguna</string>
+    <string name="edit">Ubah</string>
+    <string name="liked_influencer">Influencer Yang Disukai</string>
+    <string name="others">Lainnya</string>
+    <string name="rp">Rp</string>
+    <string name="on_progress">DALAM PROSES</string>
 </resources>

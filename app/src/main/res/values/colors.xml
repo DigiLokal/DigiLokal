@@ -10,6 +10,7 @@
 
     <color name="dilo_blue">#0040E4</color>
     <color name="darker_blue">#0035bd</color>
+    <color name="red">#EA3959</color>
     <color name="dilo_yellow">#FFB200</color>
     <color name="gold">#FF7400</color>
     <color name="lighter_black">#2B2B2B</color>
@@ -17,6 +18,19 @@
 
     <color name="gray">#8F9097</color>
     <color name="white_background">#FBFBFB</color>
+    <color name="white_gray">#EDEDED</color>
+    <color name="invisible_gray">#E1E1E1</color>
+
+    <color name="order_done">#DCF6ED</color>
+    <color name="order_done_text">#445F56</color>
+
+    <color name="order_progress">#edf2fd</color>
+    <color name="order_progress_text">#0040E4</color>
+
+    <color name="order_yellow">#f9ecd7</color>
+    <color name="order_yellow_text">#EC9141</color>
+
+
 
     <color name="divider_color">#E0E0E0</color>
 
