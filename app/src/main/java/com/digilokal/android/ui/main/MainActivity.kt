@@ -13,12 +13,11 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.digilokal.android.R
-import com.digilokal.android.WelcomeActivity
-import com.digilokal.android.data.UserPreference
+import com.digilokal.android.data.repository.UserPreference
 import com.digilokal.android.databinding.ActivityMainBinding
-import com.digilokal.android.helper.ViewModelFactory
+import com.digilokal.android.di.ViewModelFactory
 import com.digilokal.android.helper.setupFullScreenMode
-import com.digilokal.android.ui.splash.SplashActivity
+import com.digilokal.android.ui.authentication.splash.SplashActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 

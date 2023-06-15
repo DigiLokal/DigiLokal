@@ -4,7 +4,7 @@
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="register_email">Daftar dengan Email</string>
+    <string name="register_email">Daftar</string>
     <string name="title_login_page">Selamat datang kembali!</string>
     <string name="message_login_page">Senang bertemu denganmu lagi! Kembalilah dan lanjutkan perjalanan Anda bersama kami</string>
     <string name="email_title">Email</string>
@@ -39,4 +39,13 @@
     <string name="others">Lainnya</string>
     <string name="rp">Rp</string>
     <string name="on_progress">DALAM PROSES</string>
+    <string name="projects">Projects</string>
+    <string name="my_profile">My Profile</string>
+
+<!--    placeholder-->
+    <string name="warung_maknyus">Warung Maknyus</string>
+    <string name="influencer_1">tarisharf</string>
+    <string name="influencer_2">tifanny_jolie</string>
+    <string name="influencer_3">davidprll</string>
+    <string name="influencer_4">edwarddwardx</string>
 </resources>

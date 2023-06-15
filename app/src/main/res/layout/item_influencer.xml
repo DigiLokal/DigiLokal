@@ -32,12 +32,14 @@
                 tools:srcCompat="@drawable/influencer_1" />
 
         </androidx.cardview.widget.CardView>
+
         <TextView
             android:id="@+id/ig_follower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="1.5K"
+            android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/ic_instagram"
             app:layout_constraintTop_toTopOf="@+id/ic_instagram" />
@@ -48,9 +50,21 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="0.9K"
+            android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/ic_twitter"
             app:layout_constraintTop_toTopOf="@+id/ic_twitter" />
+
+        <TextView
+            android:id="@+id/tt_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="11K"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/ic_tiktok"
+            app:layout_constraintTop_toTopOf="@+id/ic_tiktok" />
 
 
         <ImageView
@@ -83,29 +97,35 @@
             app:layout_constraintTop_toTopOf="@+id/ic_instagram"
             app:srcCompat="@drawable/ic_twitter" />
 
-        <TextView
-            android:id="@+id/tt_follower"
-            android:layout_width="18dp"
-            android:layout_height="15dp"
-            android:layout_marginStart="4dp"
-            android:text="11K"
-            android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/ic_tiktok"
-            app:layout_constraintTop_toTopOf="@+id/ic_tiktok" />
+
 
         <TextView
-            android:id="@+id/influencer_username"
+            android:id="@+id/at"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="\u0040danuartmd"
+            android:text="\u0040"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/image_layout"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <TextView
+            android:id="@+id/influencer_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="danuartmd"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/at"
+            app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/city"
             android:layout_width="wrap_content"
@@ -114,8 +134,8 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Bekasi"
             android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="@+id/influencer_username"
-            app:layout_constraintTop_toBottomOf="@+id/influencer_username" />
+            app:layout_constraintStart_toStartOf="@+id/at"
+            app:layout_constraintTop_toBottomOf="@+id/at" />
 
         <TextView
             android:id="@+id/field_area"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".ui.authentication.login.LoginActivity">
 
     <TextView
         android:id="@+id/bg_progressbar"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintVertical_bias="0.42000002" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -104,6 +104,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/dilo_blue"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="@string/login"
         android:textSize="16sp"
         android:textStyle="bold"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.profile.editprofile.EditProfileActivity">
+    tools:context=".ui.main.profile.editprofile.EditProfileActivity">
 
     <TextView
         android:id="@+id/bg_progressbar"
@@ -41,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="@string/edit_profile"
         android:textColor="@color/lighter_black"
         android:textSize="20sp"
