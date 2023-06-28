@@ -29,9 +29,15 @@ class ServicesAdapter(private val services: List<ServicesItem>) :
 //                .into(ivStory)
 
             when (services[position].platform) {
-                "TikTok" -> ivPlatform.setImageResource(R.drawable.ic_tiktok)
-                "Instagram" -> ivPlatform.setImageResource(R.drawable.ic_instagram)
-                else -> ivPlatform.setImageResource(R.drawable.ic_tiktok)
+                "TikTok" -> {
+                    ivPlatform.setImageResource(R.drawable.ic_tiktok)
+                    ivInfluencer.setImageResource(R.drawable.ph_service)
+                }
+
+                "Instagram" -> {
+                    ivPlatform.setImageResource(R.drawable.ic_instagram)
+                    ivInfluencer.setImageResource(R.drawable.ph_services_2)
+                }
             }
             tvServicesTitle.text = services[position].title
             username.text = services[position].influencerUsername

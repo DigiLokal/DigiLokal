@@ -41,7 +41,7 @@ class AllInfluencerAdapter(private val influencer: List<InfluencerItem>) :
                 }
                 "influencer_3" -> {
                     ivInfluencer.setImageResource(R.drawable.influencer_3)
-                    influencerUsername.text = "davidprll"
+                    influencerUsername.text = "graciellavioletta"
                 }
 
                 "influencer_4" -> {

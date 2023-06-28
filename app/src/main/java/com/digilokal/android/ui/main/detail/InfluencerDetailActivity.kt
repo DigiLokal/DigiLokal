@@ -64,7 +64,7 @@ class InfluencerDetailActivity : AppCompatActivity(), RateCardAdapter.OnRateCard
             }
             "influencer_3" -> {
                 binding.ivInfluencer.setImageResource(R.drawable.influencer_3)
-                binding.influencerUsername.text = "davidprll"
+                binding.influencerUsername.text = "graciellavioletta"
             }
 
             "influencer_4" -> {
